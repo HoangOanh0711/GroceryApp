@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/APP/GroceryApp/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/APP/GroceryApp/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/APP/GroceryApp/app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="..\:/APP/android-master/app/src/main/res/layout/activity_about.xml" value="0.16666666666666666" />
         <entry key="..\:/APP/android-master/app/src/main/res/layout/activity_cart.xml" value="0.1796875" />
         <entry key="..\:/APP/android-master/app/src/main/res/layout/activity_history.xml" value="0.1796875" />

@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/logo"
         android:transitionName="logo_image"
@@ -21,14 +21,14 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="168dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="-10dp"
-        android:fontFamily="@font/segoeuib"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="Signup"
         android:textColor="@color/black"
-        android:textSize="45sp"
+        android:textSize="35sp"
         android:transitionName="logo_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -36,10 +36,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/sigemail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
         android:hint="Email"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
@@ -51,24 +52,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="380dp"
-            android:layout_height="60dp"
+            android:id="@+id/sigemail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_email_24"
             android:drawablePadding="12dp"
             android:inputType="textEmailAddress"
-            android:textSize="20dp"
-            android:id="@+id/sigemail1"/>
+            android:textSize="18sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/signame"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="15dp"
         android:hint="Full Name"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
@@ -80,20 +81,20 @@
         app:layout_constraintTop_toBottomOf="@+id/sigemail">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="380dp"
-            android:layout_height="60dp"
+            android:id="@+id/signame1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_person_outline_24"
             android:drawablePadding="12dp"
             android:inputType="textPersonName"
-            android:textSize="20dp"
-            android:id="@+id/signame1"/>
+            android:textSize="18sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/sigphone"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="8dp"
@@ -109,20 +110,20 @@
         app:layout_constraintTop_toBottomOf="@+id/signame">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="380dp"
-            android:layout_height="60dp"
+            android:id="@+id/sigphone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_phone_24"
             android:drawablePadding="12dp"
             android:inputType="number"
-            android:textSize="20dp"
-            android:id="@+id/sigphone1"/>
+            android:textSize="18sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/sigusername"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="8dp"
@@ -139,20 +140,20 @@
         app:layout_constraintTop_toBottomOf="@+id/sigphone">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="380dp"
-            android:layout_height="60dp"
+            android:id="@+id/sigusername1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_person_24"
             android:drawablePadding="12dp"
             android:inputType="textPersonName"
-            android:textSize="20dp"
-            android:id="@+id/sigusername1"/>
+            android:textSize="18sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/sigpassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="8dp"
@@ -171,41 +172,59 @@
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="380dp"
-            android:layout_height="60dp"
+            android:id="@+id/sigpassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_lock_24"
             android:drawablePadding="12dp"
             android:inputType="textPassword"
-            android:textSize="20dp"
-            android:id="@+id/sigpassword1"/>
+            android:textSize="20dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <Button
-        android:id="@+id/CallLogin"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/btn_bg"
-        android:text="LOGIN"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/callcreate" />
+        app:layout_constraintTop_toBottomOf="@+id/callcreate">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="If you already have an account, "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/CallLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Login"
+            android:textColor="@color/light_blue_900"
+            android:textSize="15sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/callcreate"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/btn_bg"
         android:text="SIGN UP"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sigpassword" />
